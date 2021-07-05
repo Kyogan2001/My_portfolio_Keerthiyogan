@@ -166,6 +166,7 @@ footer{
     border-top-left-radius:2rem;
     border-top-right-radius:2rem;
     margin-top: 3.8rem;
+    padding-bottom: 2rem;
 }
 h3{
     margin-bottom:1rem ;
@@ -255,6 +256,11 @@ footer a:hover{
       float: none;
       text-align: center;
       width: 100%;
+    }
+
+    body{
+        min-width: auto;
+        min-height: auto;
     }
 
     .projects{
