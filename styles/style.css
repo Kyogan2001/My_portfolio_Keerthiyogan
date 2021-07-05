@@ -121,18 +121,18 @@ header{
 h1{
     margin-top: 2rem;
     font-weight: 800;
-    text-align: end;
+    text-align: start;
     width: 80%;
     float: left;
 }
 
-h2{
-    text-align: end;
-}
+
+
 
 header .sign{
     font-size: 15rem;
     width: 50%;
+    overflow:inherit;
     justify-content:center;
     float: right;
     margin: 0 2rem;
@@ -144,18 +144,25 @@ header .sign i{
 }
 
 .techknow{
-    margin-top: -5rem;
-    margin-bottom: 1rem;
+    margin-top: -1rem;
+    margin-bottom:2rem ;
     color: #fff;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
+.techknow h2{
+    text-align: center;
+    line-height: 1px;
+    /* margin: auto; */
+}
+
 .techknow i{
     color: #32a0c2;
     font-size: 2rem;
-    margin: 1rem;
+    margin: none;
+    margin-left: 10px;
 }
 
 footer{
@@ -262,6 +269,26 @@ footer a:hover{
         min-width: auto;
         min-height: auto;
     }
+
+    header{
+        display: flex;
+    }
+
+    .techknow{
+
+    }
+
+    h2{
+        margin: none;
+    }
+
+    /* header .sign{
+        font-size: 10rem;
+        width: 50%;
+        justify-content:center;
+        float: right;
+        margin: 0 2rem;
+    } */
 
     .projects{
         display:block;
