@@ -17,7 +17,7 @@ html{
     font-size: 16px;
 }
 
-.btn{
+/* .btn{
     height: 1.5rem;
     border: 1px solid #32a0c2;
     border-radius: 3px;
@@ -25,7 +25,7 @@ html{
     text-align: center;
     width: 5rem;
     padding: 5px 10px;
-}
+} */
 
 .container{
     width:80%;
@@ -49,6 +49,7 @@ body{
     padding: 0;
     margin:0;
     background-color: #000000;
+    min-width: 80vh;
 }
 
 nav{
@@ -177,11 +178,17 @@ footer a{
 footer a:hover{
     color: #32a0c2;
 }
+
+
+.AboutME{
+    background-color: #fff;
+}
+
+
 .projects{
     padding: 2rem;
     background-color: rgb(0, 0, 0);
-    display: block;
-    /* flex-wrap:nowrap; */
+    display:block;
 }
 .project0,
 .project1,
@@ -190,6 +197,52 @@ footer a:hover{
     margin: 2rem;
     padding: 1rem;
     border-radius: 2rem;
+    display: flex;
+}
+
+.projects .project0-title{
+    width: 60%;
+}
+.projects h2{
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+
+.projects .btn{
+    width: auto;
+    float: right;
+    display: flex;
+    width: 20%;
+}
+
+.projects p{
+    margin: 1rem;
+    text-align: center;
+}
+
+.projects .btn button{
+    margin: 20px;
+    display: block;
+    border: none;
+    min-height: 2rem;
+    min-width: 8rem;
+    background-color:#32a0c2;
+    color: #fff;
+    font-weight: 800;
+    float: left;
+    border-radius: 2rem;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.projects .btn button:hover{
+    transform: translateY(1px);
+    box-shadow: 1px 1px 3px #000000;
+}
+
+.projects .btn button:focus{
+    box-shadow: none;
 }
 
 
@@ -203,7 +256,11 @@ footer a:hover{
     }
 
     .projects{
-        display:flex;
-        
+        display:block;
     }
+
+    .projects .btn{
+        display:block;
+    }
+
 }
